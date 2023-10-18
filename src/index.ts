@@ -1,4 +1,4 @@
-import MainContainer from "./MainContainer/MainContainer";
+import MainContainer from "./MainContainer/MainContainer.js";
 
 const bodyElement = document.querySelector("body")!;
 
