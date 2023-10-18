@@ -1,12 +1,9 @@
 import Character from "../Character/Character.js";
-import { type SquireData, type CharacterData } from "../Types.js";
+import { type SquireData } from "../Types.js";
 
 class Squire extends Character {
-  constructor(
-    characterData: CharacterData,
-    protected squireData: SquireData,
-  ) {
-    super(characterData);
+  constructor(protected squireData: SquireData) {
+    super(squireData.characterData);
   }
 
   communicate() {

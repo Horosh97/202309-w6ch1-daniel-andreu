@@ -1,12 +1,9 @@
 import Character from "../Character/Character.js";
-import { type KingData, type CharacterData } from "../Types.js";
+import { type KingData } from "../Types.js";
 
 class King extends Character {
-  constructor(
-    characterData: CharacterData,
-    protected kingData: KingData,
-  ) {
-    super(characterData);
+  constructor(protected kingData: KingData) {
+    super(kingData.characterData);
   }
 
   communicate() {

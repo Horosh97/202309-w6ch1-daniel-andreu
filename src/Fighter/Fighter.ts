@@ -1,12 +1,9 @@
 import Character from "../Character/Character.js";
-import { type FighterData, type CharacterData } from "../Types.js";
+import { type FighterData } from "../Types.js";
 
 class Fighter extends Character {
-  constructor(
-    characterData: CharacterData,
-    protected figtherData: FighterData,
-  ) {
-    super(characterData);
+  constructor(protected figtherData: FighterData) {
+    super(figtherData.characterData);
   }
 
   communicate() {
