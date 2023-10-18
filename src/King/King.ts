@@ -1,5 +1,5 @@
 import Character from "../Character/Character.js";
-import { type KingData, type CharacterData } from "../types.js";
+import { type KingData, type CharacterData } from "../Types.js";
 
 class King extends Character {
   constructor(
