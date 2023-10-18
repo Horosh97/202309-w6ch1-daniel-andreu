@@ -1,6 +1,6 @@
-import MainContainer from "./MainContainer/MainContainer.js";
+import AppElement from "./AppElement/AppElement.js";
 
 const bodyElement = document.querySelector("body")!;
 
-const mainContainer = new MainContainer(bodyElement);
-mainContainer.render();
+const appElement = new AppElement(bodyElement);
+appElement.render();

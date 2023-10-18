@@ -1,17 +1,16 @@
-import type CharacterData from "../Types.js";
+import { type CharacterData } from "../types.js";
 
 abstract class Character {
-  characterData;
   alive = true;
   show = "Game of Thrones";
 
-  constructor(characterData: CharacterData) {
-    this.characterData = characterData;
-  }
+  constructor(protected characterData: CharacterData) {}
 
   protected die() {
     this.alive = false;
   }
+
+  protected abstract communicate(): string;
 }
 
 export default Character;
